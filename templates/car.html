@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stock.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="images-div">
+            <a href="https://linkedin.com/in/nahom-araya-071603228" target="_blank">
+                <img id="linkPic" src="/static/img/linkerdln.png">
+            </a>
+            <a href="https://github.com/Nahom96" target="_blank">
+                <img id="GitPic" src="/static/img/github.png">
+            </a>
+            <a href="mailto:Arayanahom475@gmail.com" target="_blank">
+                <img id="EmailPic" src="/static/img/mail.png">
+            </a>
+        </div>
+
+        <div class="name">
+            <h2>Nahom Araya</h2>
+        </div>
+
+        <div class="wordLinks-div">
+            <a href="{{ url_for('base') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('project') }}">Projects</a>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Car Project</h1>
+    </div>
+    <div class="para">
+         <p>Developed an engaging Car Game Project using C# in Visual Studio, where you can use
+             many types of cars, earn medals, and compare scores with each other and various other
+             game features, such as realistic car physics, challenging obstacles, and dynamic game mechanics.
+
+
+        <br>
+        <br>
+    </p>
+        <h2><i>Tools Utilized:</i></h2>
+        <ul>
+            <li><strong>C#:</strong> The core programming language employed in the development of the application.</li>
+            <br>
+            <li><strong>GUI:</strong> Designed and implemented an intuitive and visually pleasing user interface to provide a seamless and enjoyable user experience.</li>
+            <br>
+            <li><strong>Visual Studio:</strong> Utilized the development environment to create and optimize the project, ensuring smooth functionality and an engaging user experience.</li>
+        </ul>
+
+    </div>
+
+    <div class="buttons-div">
+        <a href="https://github.com/Nahom96/Car-Game" target="_blank"><button class="btn-about">See more</button></a>
+    </div>
+
+</body>
+</html>

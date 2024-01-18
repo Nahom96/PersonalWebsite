@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/movie.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="images-div">
+            <a href="https://linkedin.com/in/nahom-araya-071603228" target="_blank">
+                <img id="linkPic" src="/static/img/linkerdln.png">
+            </a>
+            <a href="https://github.com/Nahom96" target="_blank">
+                <img id="GitPic" src="/static/img/github.png">
+            </a>
+            <a href="mailto:Arayanahom475@gmail.com" target="_blank">
+                <img id="EmailPic" src="/static/img/mail.png">
+            </a>
+        </div>
+
+        <div class="name">
+            <h2>Nahom Araya</h2>
+        </div>
+
+        <div class="wordLinks-div">
+            <a href="{{ url_for('base') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('project') }}">Projects</a>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Movie Project</h1>
+    </div>
+    <div class="para">
+         <p>I spearheaded the design and development of a dynamic Movie Site, leveraging the power of Java and Spring Boot. The heart of this project lies
+             in its sophisticated MongoDB database, meticulously engineered to efficiently store and manage an extensive library of movie data. This comprehensive
+             platform empowers users with an array of features, including the ability to rate movies, explore captivating posters, and access trailers, all of which
+             contribute to an enriched and immersive movie-watching experience.
+
+
+        <br>
+        <br>
+    </p>
+        <h2><i>Tools Utilized:</i></h2>
+        <ul>
+            <li><strong>Java:</strong> The core programming language employed in the development of the application.</li>
+            <br>
+            <li><strong>SpringBoot:</strong> This powerful framework streamlined the development process, allowing for
+                rapid creation of robust and scalable applications. Its versatility and ease of use made it a key component
+                in building a dynamic and user-friendly project.</li>
+            <br>
+            <li><strong>IntelliJ:</strong> Utilized the development environment to create and optimize the project, ensuring smooth functionality and an engaging user experience.</li>
+        </ul>
+
+    </div>
+
+    <div class="buttons-div">
+        <a href="https://github.com/Nahom96/Movie-Site" target="_blank"><button class="btn-about">See more</button></a>
+    </div>
+
+</body>
+</html>

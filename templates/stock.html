@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock News Alerter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stock.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="images-div">
+            <a href="https://linkedin.com/in/nahom-araya-071603228" target="_blank">
+                <img id="linkPic" src="/static/img/linkerdln.png">
+            </a>
+            <a href="https://github.com/Nahom96" target="_blank">
+                <img id="GitPic" src="/static/img/github.png">
+            </a>
+            <a href="mailto:Arayanahom475@gmail.com" target="_blank">
+                <img id="EmailPic" src="/static/img/mail.png">
+            </a>
+        </div>
+
+        <div class="name">
+            <h2>Nahom Araya</h2>
+        </div>
+
+        <div class="wordLinks-div">
+            <a href="{{ url_for('base') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('project') }}">Projects</a>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Stock News Alerter</h1>
+    </div>
+    <div class="para">
+         <p>This stock news alerter is a comprehensive and sophisticated application
+        designed to empower users with real-time stock market insights and essential
+        financial information. Developed with an expert blend of Python programming and
+        Twilio's cutting-edge capabilities, this project stands as a remarkable accomplishment
+        in the ever-evolving realm of stock trading and data analysis.
+
+        <br>
+        <br>
+    </p>
+        <h2><i>Tools Utilized:</i></h2>
+        <ul>
+            <li><strong>Python:</strong> The primary programming language used for building the application.</li>
+            <br>
+            <li><strong>Twilio:</strong> A cloud communications platform that provides SMS capabilities for sending alerts.</li>
+            <br>
+            <li><strong>APIs:</strong> Application Programming Interfaces that were integrated to retrieve financial data and enhance the functionality of the application.</li>
+        </ul>
+
+    </div>
+
+    <div class="buttons-div">
+        <a href="https://github.com/Nahom96/Stock-Trading-News/tree/master" target="_blank"><button class="btn-about">See more</button></a>
+    </div>
+
+</body>
+</html>

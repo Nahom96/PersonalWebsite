@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
+    <title>Project</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
 </head>
@@ -34,14 +34,14 @@
         <h1>Projects</h1>
     </div>
     <div class="projects">
-        <a href="/project1.html" class="project-link">
+        <a href="{{ url_for('stock') }}" class="project-link">
             <div class="project-box">
                 <img src="/static/img/stock.jpeg" alt="Stock Image">
-                <h3 class="project-title">Stock Trading News</h3>
+                <h3 class="project-title">Stock News Alerter</h3>
                 <p class="project-description">Developed a Python application for real-time stock tracking and data analysis...</p>
             </div>
         </a>
-        <a href="/project2.html" class="project-link">
+        <a href="{{ url_for('car') }}" class="project-link">
             <div class="project-box">
                 <img src="/static/img/car.jpeg" alt="Car Image">
                 <h3 class="project-title-car">Car Game</h3>
@@ -50,11 +50,11 @@
         </a>
     </div>
     <div class="project">
-        <a href="/project3.html" class="project-link">
+        <a href="{{ url_for('movie') }}" class="project-link">
             <div class="project-box">
                 <img src="/static/img/movie.jpeg" alt="Movie Image">
                 <h3 class="project-title">Movie Site</h3>
-                <p class="project-description-movie">Designed and developed a feature-rich Full Stack Movie Site using Java and Spring Boot...</p>
+                <p class="project-description-movie">Designed and developed a feature-rich Movie Site using Java and Spring Boot...</p>
             </div>
         </a>
     </div>
