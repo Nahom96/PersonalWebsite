@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About me</title>
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
 </head>
 <body>
+    <div>
+        <div class="images-div">
+            <a href="https://linkedin.com/in/nahom-araya-071603228" target="_blank">
+                <img id="linkPic" src="/static/img/linkerdln.png">
+            </a>
+            <a href="https://github.com/Nahom96" target="_blank">
+                <img id="GitPic" src="/static/img/github.png">
+            </a>
+            <a href="mailto:Arayanahom475@gmail.com" target="_blank">
+                <img id="EmailPic" src="/static/img/mail.png">
+            </a>
+        </div>
 
+        <div class="name">
+            <h2>Nahom Araya</h2>
+        </div>
+
+        <div class="wordLinks-div">
+            <a href="{{ url_for('base') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('project') }}">Projects</a>
+        </div>
+    </div>
+
+    <div class="photo">
+        <img src="/static/img/NahomPic.jpeg">
+    </div>
+    <div class="title">
+        <h1>About</h1>
+    </div>
+
+    <div class="talks">
+        <h3>Who am I?</h3>
+
+        <p> I'm currently a second-year student enrolled in the Software Engineering program at Centennial College,
+            where I'm diligently pursuing my studies in this field.
+
+            <br>
+            <br>
+            During my time at Avolta Inc. as a Backend Software Engineer Intern, I've had the opportunity to
+            specialize in back-end web and mobile development within the context of a startup focused on vehicle theft
+            prevention. <br>
+            <br>
+            In this role, I've leveraged my skills in Python, particularly with the Flask framework, and worked
+            with SQL databases to ensure robust server-side functionality and effective data management for our applications.
+            <br>
+            <br>
+
+            As a second-year Software Engineering student at Centennial College, I've worked on several significant projects. One project
+            involved developing a Python application for real-time stock tracking and data analysis, Full Stack Movie Site with Java, Spring Boot, and React. Lastly, I created an engaging Car Game using C# in Visual Studio, showcasing my game development and GUI skills.
+            These projects reflect my versatility in various programming languages and technologies, from finance and entertainment to gaming.
+        </p>
+    </div>
+
+   <div class="buttons-div">
+       <a href="{{ url_for('project') }}"><button class="btn-work">My Work</button></a>
+   </div>
+
+    <script defer>
+        const btnWork = document.querySelector('.btn-work');
+
+        btnWork.addEventListener('click', function() {
+            window.location.href = '/project.html';
+        });
+    </script>
 </body>
 </html>

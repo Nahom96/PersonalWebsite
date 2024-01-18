@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
 </head>
 <body>
+    <div>
+        <div class="images-div">
+            <a href="https://linkedin.com/in/nahom-araya-071603228" target="_blank">
+                <img id="linkPic" src="/static/img/linkerdln.png">
+            </a>
+            <a href="https://github.com/Nahom96" target="_blank">
+                <img id="GitPic" src="/static/img/github.png">
+            </a>
+            <a href="mailto:Arayanahom475@gmail.com" target="_blank">
+                <img id="EmailPic" src="/static/img/mail.png">
+            </a>
+        </div>
 
+        <div class="name">
+            <h2>Nahom Araya</h2>
+        </div>
+
+        <div class="wordLinks-div">
+            <a href="{{ url_for('base') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('project') }}">Projects</a>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Projects</h1>
+    </div>
+    <div class="projects">
+        <a href="/project1.html" class="project-link">
+            <div class="project-box">
+                <img src="/static/img/stock.jpeg" alt="Stock Image">
+                <h3 class="project-title">Stock Trading News</h3>
+                <p class="project-description">Developed a Python application for real-time stock tracking and data analysis...</p>
+            </div>
+        </a>
+        <a href="/project2.html" class="project-link">
+            <div class="project-box">
+                <img src="/static/img/car.jpeg" alt="Car Image">
+                <h3 class="project-title-car">Car Game</h3>
+                <p class="project-description">Developed an engaging Car Game Project using C# in Visual Studio...</p>
+            </div>
+        </a>
+    </div>
+    <div class="project">
+        <a href="/project3.html" class="project-link">
+            <div class="project-box">
+                <img src="/static/img/movie.jpeg" alt="Movie Image">
+                <h3 class="project-title">Movie Site</h3>
+                <p class="project-description-movie">Designed and developed a feature-rich Full Stack Movie Site using Java and Spring Boot...</p>
+            </div>
+        </a>
+    </div>
 </body>
 </html>

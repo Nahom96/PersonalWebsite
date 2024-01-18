@@ -1,9 +1,10 @@
 body{
     background-image: url('/static/img/homeBackground.webp');
+    overflow: hidden;
+
     background-size: cover; /* Adjust as needed */
-    background-attachment: fixed; /* Fix the background image in place */
-    overflow-x: hidden;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #greet{
     text-align: center;
@@ -28,86 +29,94 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-
 .btn-about {
-    display: inline-block;
-    padding: 15px 30px; /* Increase padding to make the button bigger */
-    font-size: 18px; /* Increase font size for a larger button */
-    font-weight: bold;
-    font-family: 'Salsa', sans-serif;
-    opacity: 0.7;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(to right, #b37a00 0%, #0056b3 100%);
-    color: #ffffff; /* Text color */
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    outline: none; /* Remove button outline on focus */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+   display: inline-block;
+   padding: 15px 30px; /* Increase padding to make the button bigger */
+   font-size: 18px; /* Increase font size for a larger button */
+   font-weight: bold;
+   font-family: 'Salsa', sans-serif;
+   opacity: 0.7;
+   text-align: center;
+   text-decoration: none;
+   border: none;
+   border-radius: 25px;
+   background: linear-gradient(to right, #b37a00 0%, #0056b3 100%);
+   color: #ffffff; /* Text color */
+   cursor: pointer;
+   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+   outline: none; /* Remove button outline on focus */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
+
 
 .btn-about:hover {
-    background: linear-gradient(to right, #0056b3 0%, #b37a00 100%);
-    transform: scale(1.05); /* Slightly scale up on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+   background: linear-gradient(to right, #0056b3 0%, #b37a00 100%);
+   transform: scale(1.05); /* Slightly scale up on hover */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
+
 
 .btn-project {
-    display: inline-block;
-    margin-left:5px;
-    padding: 15px 30px; /* Increase padding to make the button bigger */
-    font-size: 18px; /* Increase font size for a larger button */
-    font-weight: bold;
-    font-family: 'Salsa', sans-serif;
-    opacity: 0.7;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(to right, #007bff 0%, #b37a00 100%);
-    color: #ffffff; /* Text color */
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    outline: none; /* Remove button outline on focus */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    transition: filter 0.5s ease;
+   display: inline-block;
+   margin-left:5px;
+   padding: 15px 30px; /* Increase padding to make the button bigger */
+   font-size: 18px; /* Increase font size for a larger button */
+   font-weight: bold;
+   font-family: 'Salsa', sans-serif;
+   opacity: 0.7;
+   text-align: center;
+   text-decoration: none;
+   border: none;
+   border-radius: 25px;
+   background: linear-gradient(to right, #007bff 0%, #b37a00 100%);
+   color: #ffffff; /* Text color */
+   cursor: pointer;
+   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+   outline: none; /* Remove button outline on focus */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+   transition: filter 0.5s ease;
 }
 .btn-project:hover {
-    background: linear-gradient(to right, #b37a00 0%, #007bff 100%);
-    transform: scale(1.05); /* Slightly scale up on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+   background: linear-gradient(to right, #b37a00 0%, #007bff 100%);
+   transform: scale(1.05); /* Slightly scale up on hover */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
-
 #linkPic {
-    height: 40px; /* Use "height" instead of "length" */
-    width: 40px;  /* Use a colon ":" instead of a semicolon ";" */
-    margin-right: 25px;
-    transition: filter 0.5s ease;
+   height: 40px; /* Use "height" instead of "length" */
+   width: 40px;  /* Use a colon ":" instead of a semicolon ";" */
+   margin-right: 25px;
+   transition: filter 0.5s ease;
 }
 #GitPic {
-    height: 40px; /* Use "height" instead of "length" */
-    width: 40px;  /* Use a colon ":" instead of a semicolon ";" */
-    margin-right: 15px;
-    transition: filter 0.5s ease;
+   height: 40px; /* Use "height" instead of "length" */
+   width: 40px;  /* Use a colon ":" instead of a semicolon ";" */
+   margin-right: 15px;
+   transition: filter 0.5s ease;
 }
 #EmailPic {
-    height: 70px; /* Use "height" instead of "length" */
-    width: 70px;  /* Use a colon ":" instead of a semicolon ";" */
-    margin-bottom: -15px;
-    transition: filter 0.5s ease;
+   height: 70px; /* Use "height" instead of "length" */
+   width: 70px;  /* Use a colon ":" instead of a semicolon ";" */
+   margin-bottom: -15px;
+   transition: filter 0.5s ease;
 }
 
+
 .images-div {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   position: absolute;
+   top: 85%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 #linkPic:hover, #GitPic:hover, #EmailPic:hover {
-    filter: grayscale(100%) invert(100%); /* Apply a color change effect on hover */
+   filter: grayscale(100%) invert(100%); /* Apply a color change effect on hover */
 }
+.images-div a {
+    text-decoration: none; /* Remove underline or any other text decoration */
+    color: transparent; /* Set text color to transparent, making it invisible */
+}
+
+
+
+
+
 
